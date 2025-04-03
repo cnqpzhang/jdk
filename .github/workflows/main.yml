@@ -316,7 +316,6 @@ jobs:
       xcode-toolset-version: '14.3.1'      
       make-target: 'static-libs-bundles'
       debug-levels: '[ "release" ]'
-      gcc-major-version: '10'
       configure-arguments: ${{ github.event.inputs.configure-arguments }}
       make-arguments: ${{ github.event.inputs.make-arguments }}
       bundle-suffix: "-static-libs"

@@ -54,6 +54,9 @@ on:
       make-arguments:
         required: false
         type: string
+      bundle-suffix:
+        required: false
+        type: string
 
 jobs:
   build-macos:
@@ -124,3 +127,4 @@ jobs:
         with:
           platform: ${{ inputs.platform }}
           debug-suffix: '${{ matrix.suffix }}'
+          bundle-suffix: ${{ inputs.bundle-suffix }}
